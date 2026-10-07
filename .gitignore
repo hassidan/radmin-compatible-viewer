@@ -1,0 +1,45 @@
+# Local Python environments and generated build outputs
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# User data and private investigation material must never be published
+.env
+.env.*
+connections*.json
+*.rpb
+*.pcap
+*.pcapng
+*.dmp
+*.DMP
+*.key
+*.p12
+research/
+evidence/
+extracted/
+vm/
+
+# Installers belong in Releases, not source history
+*.exe
+*.dll
+*.deb
+*.rpm
+*.dmg
+*.pkg
+*.zip
+*.tar.gz
+*.whl
+
+# Platform/editor leftovers
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/

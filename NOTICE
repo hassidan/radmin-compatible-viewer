@@ -1,0 +1,27 @@
+Radmin Compatible Viewer
+Copyright (c) 2026 Radmin Compatible Viewer contributors
+
+This is an independently authored interoperability application. It is unofficial
+and is not affiliated with, sponsored by, or endorsed by the Radmin vendor.
+References to Radmin identify the software with which this project seeks to
+interoperate. Radmin and associated product names and trademarks remain the
+property of their respective owners. No trademark rights are granted here.
+
+The accompanying MIT license applies only to independently authored project code
+and documentation to which the contributors hold the necessary rights. It does
+not grant rights in Radmin software, vendor binaries, proprietary protocol rights,
+vendor documentation or artwork, patents, or third-party components. It does not
+claim ownership of the Radmin protocol or relicense another party's work.
+
+Contributors retain copyright in their respective contributions; the collective
+copyright line is attribution, not a transfer of ownership. Republishing this
+project does not transfer ownership of vendor material to its maintainers.
+
+Original Radmin executables, server software and native vendor brand artwork are
+not distributed as part of this project. A separate Radmin Server license and
+appropriate server permissions are required. The MIT license does not replace
+any applicable vendor agreement.
+
+Third-party dependencies retain their own licenses and notices. In particular,
+Qt/PySide6 is not MIT-licensed by this project. See THIRD_PARTY_NOTICES.md and the
+license inventory accompanying any particular binary distribution.

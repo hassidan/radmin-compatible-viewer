@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radmin-compatible-viewer"
+version = "0.1.0"
+description = "Independent Radmin-compatible remote desktop client for Linux and Windows"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "Radmin Compatible Viewer contributors"}]
+keywords = ["remote-desktop", "radmin-compatible", "pyside6", "linux", "windows"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications :: Qt",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Topic :: Desktop Environment",
+    "Topic :: System :: Networking",
+]
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.6,<7", "cryptography>=42", "pycryptodome>=3.20", "keyring>=25,<26"]
+
+[project.urls]
+Homepage = "https://github.com/hassidan/radmin-compatible-viewer"
+Source = "https://github.com/hassidan/radmin-compatible-viewer"
+Issues = "https://github.com/hassidan/radmin-compatible-viewer/issues"
+Releases = "https://github.com/hassidan/radmin-compatible-viewer/releases"
+
+[project.scripts]
+radmin-compatible-viewer = "radmin_viewer.app:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["radmin_viewer*"]
+
+[tool.setuptools.package-data]
+radmin_viewer = ["assets/*.svg"]
